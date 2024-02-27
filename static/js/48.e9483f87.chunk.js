@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkswiggyclone=self.webpackChunkswiggyclone||[]).push([[48],{48:(e,s,c)=>{c.r(s),c.d(s,{default:()=>a});c(791);var i=c(184);const a=()=>(0,i.jsx)("div",{children:"This is a Grocery Page"})}}]);
+//# sourceMappingURL=48.e9483f87.chunk.js.map

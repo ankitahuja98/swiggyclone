@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/swiggyclone/static/css/main.d5b83e55.css",
+    "main.js": "/swiggyclone/static/js/main.7f70d72b.js",
+    "static/js/48.e9483f87.chunk.js": "/swiggyclone/static/js/48.e9483f87.chunk.js",
+    "static/js/787.d99d152b.chunk.js": "/swiggyclone/static/js/787.d99d152b.chunk.js",
+    "static/media/Mainlogo.avif": "/swiggyclone/static/media/Mainlogo.05b5e1efedbc322afb00.avif",
+    "index.html": "/swiggyclone/index.html",
+    "main.d5b83e55.css.map": "/swiggyclone/static/css/main.d5b83e55.css.map",
+    "main.7f70d72b.js.map": "/swiggyclone/static/js/main.7f70d72b.js.map",
+    "48.e9483f87.chunk.js.map": "/swiggyclone/static/js/48.e9483f87.chunk.js.map",
+    "787.d99d152b.chunk.js.map": "/swiggyclone/static/js/787.d99d152b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5b83e55.css",
+    "static/js/main.7f70d72b.js"
+  ]
+}
