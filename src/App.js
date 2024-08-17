@@ -31,7 +31,7 @@ function App() {
         <>
           <Temp />
           <Routes>
-            <Route path="/" element={<Restaurants />} />
+            <Route path="/swiggyclone" element={<Restaurants />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             {/* <Route path="/cart" element={<Cart />} /> */}
