@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addItemOccurArr,
@@ -12,19 +12,6 @@ const Temp = () => {
   let ValIndex;
   const dispatch = useDispatch();
   const location = useLocation();
-
-  const RestName = useSelector((store) => {
-    return store.cart.restName;
-  });
-  const getRestName = RestName;
-
-  // console.log("getRestName", getRestName);
-
-  const RestTemp = useSelector((store) => {
-    return store.cart.temp;
-  });
-  const getRestTemp = RestTemp;
-  // console.log("getRestTemp", getRestTemp);
 
   const Items = useSelector((store) => {
     return store.cart.items;

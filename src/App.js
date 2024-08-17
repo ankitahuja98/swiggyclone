@@ -31,13 +31,12 @@ function App() {
         <>
           <Temp />
           <Routes>
-            <Route path="/swiggyclone" element={<Restaurants />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            {/* <Route path="/cart" element={<Cart />} /> */}
-            <Route path="/orderplaced" element={<OrderPlace />} />
-            <Route path="/search" element={<Search />} />
-            <Route
+            <Route exact='true' path="/" element={<Restaurants />} />
+            <Route exact='true' path="/about" element={<About />} />
+            <Route exact='true' path="/contact" element={<Contact />} />
+            <Route exact='true' path="/orderplaced" element={<OrderPlace />} />
+            <Route exact='true' path="/search" element={<Search />} />
+            <Route exact='true' 
               path="/restaurantMenu/:resid"
               element={
                 <Suspense fallback={<div>Loading...</div>}>
@@ -45,7 +44,7 @@ function App() {
                 </Suspense>
               }
             />
-            <Route
+            <Route exact='true' 
               path="/cart"
               element={
                 <Suspense fallback={<div>Loading...</div>}>
