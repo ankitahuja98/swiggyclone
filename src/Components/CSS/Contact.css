@@ -1,0 +1,27 @@
+.ContactBody {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    font-size: 1.125rem;
+}
+
+@media(max-width:768px) {
+    .heading {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:500px) {
+    .ContactBody {
+        display: block;
+    }
+    .FirstSection{
+        text-align: center;
+    }
+    .SecondSection{
+        width: 100%;
+        text-align: center;
+    }
+}

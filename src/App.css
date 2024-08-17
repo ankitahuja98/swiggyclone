@@ -1,0 +1,302 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.imageSeprationColor {
+  background: linear-gradient(180deg,
+      rgba(244, 244, 245, 0) 0%,
+      rgba(0, 0, 0, 0.4766281512605042) 19%,
+      rgba(0, 0, 0, 0.6278886554621849) 31%,
+      rgba(0, 0, 0, 0.6755077030812324) 42%,
+      rgba(0, 0, 0, 0.7343312324929971) 55%,
+      rgba(0, 0, 0, 0.7763480392156863) 69%,
+      rgba(0, 0, 0, 0.8491771708683473) 85%,
+      rgba(0, 0, 0, 0.8995973389355743) 100%);
+  height: 2.5rem;
+  z-index: 1;
+}
+
+.row {
+  justify-content: start;
+}
+
+.restRating {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.filterbtn {
+  box-shadow: 0.1px 0.1px 2px grey;
+  border: 0.1rem solid rgba(117, 117, 117, 0.363);
+}
+
+.searchbtn {
+  cursor: pointer;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.filterInput {
+  width: 100%;
+  height: 3rem;
+  outline: none;
+}
+
+.RestMenu h2 {
+  text-align: left;
+  margin-left: 1.5rem;
+  margin-top: 3rem;
+}
+
+.MenuItem {
+  border-bottom: 0.5px solid rgba(133, 133, 133, 0.231);
+  justify-content: space-between;
+  margin-bottom: 0rem;
+  padding-top: 0.7rem;
+}
+
+.ItemDetails {
+  text-align: left;
+}
+
+.MenuItem img {
+  text-align: right;
+}
+
+.img_ {
+  text-align: right;
+}
+
+.img_ img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 5px;
+}
+
+.AddBtn {
+  position: relative;
+  bottom: 27px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.251);
+  box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.326);
+  transition: transform 0.3s ease-in-out;
+}
+
+.AddBtn:hover {
+  transform: scale(1.01);
+  box-shadow: 0.5px 0.5px 6px rgba(0, 0, 0, 0.701);
+}
+
+.rest_ {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.collapse {
+  visibility: visible;
+}
+
+.cartIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.3rem;
+  width: 1.5rem;
+  height: 1.6rem;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.emptyCartPic {
+  height: 20rem;
+  width: auto;
+}
+
+.cartBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #60b246;
+  color: white;
+  font-weight: 700;
+  font-size: large;
+}
+
+.restMenudetails {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 30px;
+  background: linear-gradient(360deg,
+      hsla(240, 13%, 90%, 1) 0%,
+      hsla(240, 20%, 94%, 1) 36%,
+      hsla(240, 14%, 99%, 1) 100%);
+}
+
+.restMenudetailsDiv {
+  width: 97%;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+
+
+.Header,
+.Body,
+.ShimmerCard {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, #f6f6f6 8%, #f0f0f0 18%, #f6f6f6 33%);
+  /* background: linear-gradient(to right, #d8d9db 8%, #c9c8c8 18%, #d8d9db 33%); */
+  background-size: 1200px 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1200px 0;
+  }
+
+  100% {
+    background-position: 1200px 0;
+  }
+}
+
+.AddTip {
+  color: #ee9e47;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.model {
+  height: 13rem;
+  width: 30rem;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(106, 106, 106, 0.729);
+}
+
+.StartAFresh {
+  background-color: #60b246;
+  color: white;
+  width: 100%;
+  font-weight: 600;
+  padding: 0.7rem;
+  margin: 0px 0px 0px 10px;
+}
+
+.NoBtn {
+  color: #60b246;
+  border: 2px solid #60b246;
+  width: 100%;
+  font-weight: 600;
+  padding: 0.7rem;
+  margin: 0px 10px 0px 0px;
+}
+
+.quantityBtn {
+  position: relative;
+  bottom: 15px;
+  background-color: white;
+  /* color: #60b246; */
+  box-shadow: 0px 4px 5px rgb(204, 203, 203);
+}
+
+.placeorder {
+  transition: all 0.8s;
+}
+
+.placeorder:hover {
+  transform: scale(1.1);
+}
+
+.placeOrderBar {
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, #01b801 8%, #02cb02 18%, #01b801 33%);
+  /* background: linear-gradient(to right, #d8d9db 8%, #c9c8c8 18%, #d8d9db 33%); */
+  background-size: 1200px 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1200px 0;
+  }
+
+  100% {
+    background-position: 1200px 0;
+  }
+}
+
+.seprateLine {
+  height: 1px;
+  background-color: rgba(188, 185, 185, 0.822);
+  box-shadow: 0.1px 1.5px 15px rgb(94, 93, 93);
+}
+
+.SearchItemInp {
+  margin: 0px 20px 0px 0px;
+}
+
+@media(max-width:640px) {
+  .SearchItemInp {
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+  }
+}
+
+@media(max-width:400px) {
+  .RestMenuBox {
+    display: block;
+  }
+}
+
+@media(max-width:335px) {
+  .RestInfoName {
+    font-size: 1.3rem !important;
+  }
+}

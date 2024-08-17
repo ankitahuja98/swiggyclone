@@ -1,0 +1,174 @@
+.card_img img {
+  filter: brightness(92%);
+  z-index: 100;
+  width: 14rem;
+  height: 10rem;
+}
+
+.card_detail {
+  bottom: 2.8rem;
+}
+
+.card_details2 {
+  bottom: 4.5rem;
+}
+
+.RestaurantsDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_ {
+  cursor: pointer;
+  width: 14rem !important;
+  height: 17rem;
+  border-radius: 15px;
+}
+
+.TopRestDiv {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.TopRestDiv  ::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.TopRestCard {
+  margin-right: 4rem;
+  /* margin-left: 1.5rem; */
+}
+
+.TopRestLeftArrow,
+.TopRestRightArrow {
+  cursor: pointer;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.card_:hover {
+  transform: scale(1.05);
+  background-color: white;
+  box-shadow: 0.5px 0.5px 5px rgb(67, 66, 66);
+}
+
+.filterbtn {
+  width: auto;
+  margin-bottom: 1.5rem;
+  margin: 0px 20px 20px 0px;
+}
+.filter-btn {
+  margin-left: 0.1rem;
+  justify-content: start;
+}
+
+.filterbtnX {
+  position: relative;
+  top: 1px;
+  font-size: 0.8rem;
+}
+.filterBtnDiv {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .MainRest {
+    margin-right: 2.3rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .filterbtn {
+    font-size: 0.7rem;
+  }
+  .filterbtnX {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .MainRest {
+    margin-right: 0rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .filterbtn {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .filter-btn {
+    justify-content: start;
+  }
+  .card_ {
+    width: 20rem !important;
+    height: 19.5rem;
+  }
+  .card_img img {
+    width: 20rem;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .filter-btn {
+    display: none;
+  }
+  .filterBtnDiv {
+    display: block;
+  }
+  
+}
+
+@media (max-width: 335px) {
+  .filter-btn {
+    justify-content: center;
+  }
+  .TopRestLeftArrow,
+  .TopRestRightArrow {
+    cursor: pointer;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  .TopRestArrowDiv{
+    width: 4rem;
+  }
+  .TopRestCard {
+    margin-right: 3rem;
+    margin-left: 0.8rem;
+  }
+  .CardImg{
+    width: 18rem;
+  }
+  .rest_{
+    width: 18rem;
+  }
+  .card_ {
+    width: 18rem !important;
+    height: 18rem;
+  }
+  .card_img img {
+    width: 18rem;
+    height: 11rem;
+  }
+}
+
+@media (max-width: 335px) {
+  .CardImg{
+    width: 17rem;
+  }
+  .rest_{
+    width: 17rem;
+  }
+  .card_ {
+    width: 17rem !important;
+    height: 17rem;
+  }
+  .card_img img {
+    width: 17rem;
+    height: 10rem;
+  }
+}

@@ -1,0 +1,125 @@
+.FirstSecAbout {
+    margin-bottom: 8rem;
+    width: 60%;
+}
+
+.firstSectionImg {
+    height: 16rem;
+}
+
+
+
+
+
+
+.SecondSecionRow {
+    display: flex;
+}
+
+.RowSection {
+    width: 50%;
+    max-width: 25rem;
+}
+
+.RowSection p {
+    text-align: justify;
+}
+
+.RowSection2 {
+    width: 50%;
+    max-width: 25rem;
+    order: 0;
+}
+
+.RowSection2 p {
+    text-align: justify;
+}
+
+.RowSection2Img {
+    width: 50%;
+    max-width: 25rem;
+    order: 1;
+}
+
+.ThSecCont {
+    width: 25%;
+}
+
+.ThSecCont2 {
+    width: 25%;
+}
+
+.ThirdSectionDiv {
+    border: 2px solid black;
+}
+
+
+@media(max-width:700px) {
+    .FirstSecAbout {
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+
+    .FirstSecAbout p {
+        text-align: center;
+    }
+
+    .firstSectionImg {
+        height: 12rem;
+    }
+
+
+    .SecondSecionRow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .RowSection {
+        width: 100%;
+    }
+
+    .RowSection2 {
+        width: 100%;
+        order: 1;
+    }
+
+    .RowSection2Img {
+        width: 100%;
+        order: 0;
+    }
+
+    .mission,
+    .IndustryPioneer {
+        margin-top: 10px;
+        text-align: center !important;
+    }
+
+    .ThSecCont {
+        width: 50%;
+        height: 7rem;
+        border-bottom: 1px solid gray;
+
+    }
+
+    .ThSecCont3 {
+        border-right: 0px;
+    }
+
+    .ThSecCont2 {
+        width: 50%;
+        height: 7rem;
+    }
+
+    .ThirdSectionDiv {
+        border: none;
+    }
+
+}
+
+@media(max-width:350px) {
+    .FirstSecAbout p {
+        width: 10rem;
+        text-align: center;
+    }
+}

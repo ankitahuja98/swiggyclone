@@ -1,0 +1,122 @@
+.navbar {
+  padding-right: 2rem;
+}
+
+.NavbarDiv {
+  background-color: white;
+  z-index: 100;
+  height: 4rem;
+}
+
+.main_logo img {
+  float: left;
+}
+
+.nav_items ul li {
+  padding: 5px;
+  list-style: none;
+  font-size: larger;
+  font-weight: 700;
+  color: black;
+}
+
+.nav_items ul li :hover {
+  color: #fc8019;
+}
+
+.nav_items ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.NavbarSeprationcolor {
+  background: linear-gradient(
+    0deg,
+    hsla(0, 0%, 100%, 1) 27%,
+    hsla(240, 6%, 97%, 1) 83%,
+    hsla(0, 0%, 91%, 1) 100%
+  );
+}
+
+li {
+  /* border: 2px solid pink; */
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px !important;
+}
+
+.NavInfo {
+  width: 3rem;
+}
+
+.dropdown {
+  display: none;
+  align-items: start;
+  padding: 0px;
+  background: #f7f7f7;
+  position: relative;
+  left: 10px;
+  font-size: 13px;
+  width: 6rem;
+}
+
+.NavInfo:hover .dropdown {
+  display: block;
+}
+
+.NavInfo:hover {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .nav_items ul li {
+    font-size: medium;
+  }
+  .SearchIcon {
+    font-size: medium;
+  }
+  .SearchNavLi {
+    position: relative;
+    bottom: 0.5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main_logo {
+    width: 1.5rem;
+  }
+  .nav_items ul li {
+    font-size: small;
+    margin: 0px 5px 0px 5px !important;
+  }
+  .SearchIcon {
+    font-size: medium;
+  }
+  .SearchNavLi {
+    position: relative;
+    bottom: 1px;
+  }
+  .navbar {
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .navbar {
+    width: 95%;
+  }
+  .main_logo {
+    width: 1.2rem;
+  }
+  .nav_items ul li {
+    font-size: 15px;
+    margin: 0px 3px 0px 3px !important;
+    padding: 3px !important;
+  }
+  .navbar {
+    padding-right: 0.2rem;
+  }
+}

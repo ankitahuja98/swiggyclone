@@ -1,0 +1,20 @@
+.bestseller {
+  border: 1px solid #f97203;
+  font-family: "Noto Serif", serif;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .bestseller {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .bestseller {
+    font-size: 10px;
+  }
+}
