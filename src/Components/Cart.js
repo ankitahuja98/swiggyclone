@@ -126,11 +126,11 @@ const Cart = () => {
                 <div className="float-right w-4/12 text-right ">
                   <button
                     className="clearCartBtn p-2 rounded-lg font-bold text-xs sm:text-sm md:text-base lg:text-lg"
-                    style={{ backgroundColor: "rgb(226 31 30)", color: "white" }}
+                    style={{ backgroundColor: "rgb(203 59 58)", color: "white" }}
                     onClick={clearCartBtn}
                   >
                     Clear Cart
-                    <i className="fa-solid fa-trash fa-bounce mx-1"></i>
+                    {/* <i className="fa-solid fa-trash fa-bounce mx-1"></i> */}
                   </button>
                 </div>
               </div>
@@ -348,9 +348,9 @@ const Cart = () => {
             <p
               className="underline underline-offset-2 cursor-pointer"
               style={{ color: "#ed6148" }}
-              onClick={() => {
-                window.open("https://www.swiggy.com/refund-policy");
-              }}
+              // onClick={() => {
+              //   window.open("https://www.swiggy.com/refund-policy");
+              // }}
             >
               Read cancellation policy
             </p>

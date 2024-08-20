@@ -1,6 +1,5 @@
 {
   "name": "swiggyclone",
-  "homepage": "http://ankitahuja98.github.io/swiggyclone",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -20,7 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "CI=false && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
