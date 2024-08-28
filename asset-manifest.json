@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/swiggyclone/static/css/main.79812974.css",
-    "main.js": "/swiggyclone/static/js/main.fce00014.js",
+    "main.css": "/swiggyclone/static/css/main.b9f3ab8c.css",
+    "main.js": "/swiggyclone/static/js/main.185fbc36.js",
     "static/css/417.bc46f605.chunk.css": "/swiggyclone/static/css/417.bc46f605.chunk.css",
     "static/js/417.14d88891.chunk.js": "/swiggyclone/static/js/417.14d88891.chunk.js",
     "static/css/304.4c3a5e8a.chunk.css": "/swiggyclone/static/css/304.4c3a5e8a.chunk.css",
@@ -12,13 +12,14 @@
     "static/media/DeliveryBoy.png": "/swiggyclone/static/media/DeliveryBoy.8c3da424b5458793f84b.png",
     "static/media/Swiggyabout2.png": "/swiggyclone/static/media/Swiggyabout2.94db134468762c33c0ac.png",
     "static/media/SwiggyAbout1.png": "/swiggyclone/static/media/SwiggyAbout1.52833d29d90000c21012.png",
+    "static/media/location_unserviceable.png": "/swiggyclone/static/media/location_unserviceable.c29969463155fd0e562e.png",
     "static/media/Time.png": "/swiggyclone/static/media/Time.3c18a696b4e2681d2eaa.png",
     "static/media/NoWifi.png": "/swiggyclone/static/media/NoWifi.fce384cf820bf7ce9e68.png",
     "static/media/empty_cart.webp": "/swiggyclone/static/media/empty_cart.0ade70c16682ac3badc0.webp",
     "index.html": "/swiggyclone/index.html",
     "static/media/swiggylogo.svg": "/swiggyclone/static/media/swiggylogo.48eb04b39cdfbf6752f28ffd091a1f12.svg",
-    "main.79812974.css.map": "/swiggyclone/static/css/main.79812974.css.map",
-    "main.fce00014.js.map": "/swiggyclone/static/js/main.fce00014.js.map",
+    "main.b9f3ab8c.css.map": "/swiggyclone/static/css/main.b9f3ab8c.css.map",
+    "main.185fbc36.js.map": "/swiggyclone/static/js/main.185fbc36.js.map",
     "417.bc46f605.chunk.css.map": "/swiggyclone/static/css/417.bc46f605.chunk.css.map",
     "417.14d88891.chunk.js.map": "/swiggyclone/static/js/417.14d88891.chunk.js.map",
     "304.4c3a5e8a.chunk.css.map": "/swiggyclone/static/css/304.4c3a5e8a.chunk.css.map",
@@ -26,7 +27,7 @@
     "453.9b335f27.chunk.js.map": "/swiggyclone/static/js/453.9b335f27.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79812974.css",
-    "static/js/main.fce00014.js"
+    "static/css/main.b9f3ab8c.css",
+    "static/js/main.185fbc36.js"
   ]
 }
