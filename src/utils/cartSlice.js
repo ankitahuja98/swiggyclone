@@ -11,6 +11,10 @@ const cartSlice = createSlice({
     val: [],
     all_Restuarants: [],
     tempstateStore: true,
+    lat:28.6273928,
+    long:77.1716954,
+    latlongInputStore:"Delhi",
+    LatLongDisplayName : "Delhi"
   },
   reducers: {
     addItems: (state, action) => {
@@ -59,6 +63,18 @@ const cartSlice = createSlice({
     tempstateStore: (state, action) => {
       return { ...state, tempstateStore: action.payload };
     },
+    lat: (state, action) => {
+      return { ...state, lat: action.payload };
+    },
+    long: (state, action) => {
+      return { ...state, long: action.payload };
+    },
+    latlongInputStore: (state, action) => {
+      return { ...state, latlongInputStore: action.payload };
+    },
+    LatLongDisplayName: (state, action) => {
+      return { ...state, LatLongDisplayName: action.payload };
+    },
     all_Restuarants: (state, action) => {
       state.all_Restuarants.push(action.payload);
     },
@@ -84,5 +100,8 @@ export let {
   addItemOccurArr,
   clearItemOccurArr,
   tempstateStore,
+  lat,long,
+  latlongInputStore,
+  LatLongDisplayName,
   all_Restuarants,
 } = cartSlice.actions;

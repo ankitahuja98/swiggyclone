@@ -262,6 +262,32 @@
   background-size: 1200px 100%;
 }
 
+
+@media (max-width:450px) {
+
+  .NoBtn,
+  .StartAFresh {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width:350px) {
+
+  .NoBtn,
+  .StartAFresh {
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width:325px) {
+
+  .NoBtn,
+  .StartAFresh {
+    font-size: 0.6rem;
+  }
+}
+
+
 @keyframes shimmer {
   0% {
     background-position: -1200px 0;

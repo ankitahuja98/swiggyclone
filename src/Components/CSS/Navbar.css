@@ -2,6 +2,7 @@
   padding-right: 2rem;
 }
 
+
 .NavbarDiv {
   background-color: white;
   z-index: 100;
@@ -31,12 +32,10 @@
 }
 
 .NavbarSeprationcolor {
-  background: linear-gradient(
-    0deg,
-    hsla(0, 0%, 100%, 1) 27%,
-    hsla(240, 6%, 97%, 1) 83%,
-    hsla(0, 0%, 91%, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      hsla(0, 0%, 100%, 1) 27%,
+      hsla(240, 6%, 97%, 1) 83%,
+      hsla(0, 0%, 91%, 1) 100%);
 }
 
 li {
@@ -75,12 +74,20 @@ li {
   .nav_items ul li {
     font-size: medium;
   }
+
   .SearchIcon {
     font-size: medium;
   }
+
   .SearchNavLi {
     position: relative;
     bottom: 0.5px;
+  }
+}
+
+@media (max-width: 670px) {
+  .navbar {
+    padding-right: 0.7rem;
   }
 }
 
@@ -88,35 +95,90 @@ li {
   .main_logo {
     width: 1.5rem;
   }
+
   .nav_items ul li {
     font-size: small;
     margin: 0px 5px 0px 5px !important;
   }
+
   .SearchIcon {
     font-size: medium;
   }
+
   .SearchNavLi {
     position: relative;
     bottom: 1px;
   }
+
   .navbar {
-    padding-right: 1rem;
+    padding-right: 0.2rem;
   }
 }
+
+@media (max-width: 460px) {
+  .NavInfo {
+    width: 2.5rem;
+  }
+
+  .nav_items ul li {
+    font-size: 15px;
+    margin: 0px 1px 0px 1px !important;
+    padding: 1px !important;
+  }
+
+  .cartIcon {
+    width: 1.3rem;
+    height: 1.4rem;
+    font-size: 0.8rem;
+    margin: 2px;
+  }
+}
+
 
 @media (max-width: 370px) {
   .navbar {
     width: 95%;
   }
+
+  .NavInfo {
+    width: 2rem;
+  }
+
   .main_logo {
     width: 1.2rem;
   }
+
   .nav_items ul li {
     font-size: 15px;
-    margin: 0px 3px 0px 3px !important;
-    padding: 3px !important;
+    margin: 0px 1px 0px 1px !important;
+    padding: 1px !important;
   }
+
   .navbar {
     padding-right: 0.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .locationNameDiv {
+    width: 4rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .nav_items ul li {
+    font-size: 13px;
+  }
+  .locationNameDiv {
+    width: 3.3rem;
+  }
+}
+
+@media (max-width: 310px) {
+  .nav_items ul li {
+    font-size: 12px;
+  }
+  .locationNameDiv {
+    width: 3.1rem;
   }
 }

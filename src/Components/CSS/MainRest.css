@@ -31,7 +31,7 @@
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
-.TopRestDiv  ::-webkit-scrollbar {
+.TopRestDiv ::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
 
@@ -71,6 +71,7 @@
 .filterBtnDiv {
   display: none;
 }
+
 
 @media (max-width: 1280px) {
   .MainRest {
@@ -120,7 +121,6 @@
   .filterBtnDiv {
     display: block;
   }
-  
 }
 
 @media (max-width: 335px) {
@@ -133,17 +133,17 @@
     padding-left: 0.25rem;
     padding-right: 0.25rem;
   }
-  .TopRestArrowDiv{
+  .TopRestArrowDiv {
     width: 4rem;
   }
   .TopRestCard {
     margin-right: 3rem;
     margin-left: 0.8rem;
   }
-  .CardImg{
+  .CardImg {
     width: 18rem;
   }
-  .rest_{
+  .rest_ {
     width: 18rem;
   }
   .card_ {
@@ -157,10 +157,10 @@
 }
 
 @media (max-width: 335px) {
-  .CardImg{
+  .CardImg {
     width: 17rem;
   }
-  .rest_{
+  .rest_ {
     width: 17rem;
   }
   .card_ {

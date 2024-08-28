@@ -25,15 +25,28 @@ const Search = () => {
     return store.cart.all_Restuarants;
   });
 
+  let getLat;
+  let getLong;
+
+  getLat = useSelector((store) => {
+    return Number(store.cart.lat);
+  });
+  getLong = useSelector((store) => {
+    return Number(store.cart.long);
+  });
+
   // console.log("getAllRestuarants", getAllRestuarants);
 
   useEffect(() => {
     fetchResturantsApi();
-  }, []);
+  }, [getLat,getLong]);
 
   const fetchResturantsApi = async () => {
+    // console.log("getLat",getLat)
+    // console.log("getLong",getLong)
+
     const response = await fetch(
-      `https://swiggyserver-990t.onrender.com/api/restaurants?lat=28.644503&lng=77.089975&page_type=DESKTOP_WEB_LISTING`
+      `https://swiggyserver-990t.onrender.com/api/restaurants?lat=${getLat}&lng=${getLong}&page_type=DESKTOP_WEB_LISTING`
     );
 
     const fetch_data = await response.json();

@@ -6,12 +6,11 @@ import {
   clearItemOccurStore,
   ItemOccurStore,
 } from "../utils/cartSlice";
-import { useLocation } from "react-router-dom";
+
 
 const Temp = () => {
   let ValIndex;
   const dispatch = useDispatch();
-  const location = useLocation();
 
   const Items = useSelector((store) => {
     return store.cart.items;

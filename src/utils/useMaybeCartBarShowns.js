@@ -7,7 +7,7 @@ const useMaybeCartBarShowns = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === "/grocery" || location.pathname === "/about" || location.pathname === "/contact" || location.pathname === "/cart" || location.pathname === "/orderplaced" || location.pathname === "/search" || location.pathname === "/") {
+    if (location.pathname === "/grocery" || location.pathname === "/about" || location.pathname === "/contact" || location.pathname === "/cart" || location.pathname === "/orderplaced" || location.pathname === "/search" || location.pathname === "/location" || location.pathname === "/") {
       setState(false);
     } else {
       setState(true);
