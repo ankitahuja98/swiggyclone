@@ -126,7 +126,10 @@ const Cart = () => {
                 <div className="float-right w-4/12 text-right ">
                   <button
                     className="clearCartBtn p-2 rounded-lg font-bold text-xs sm:text-sm md:text-base lg:text-lg"
-                    style={{ backgroundColor: "rgb(203 59 58)", color: "white" }}
+                    style={{
+                      backgroundColor: "rgb(203 59 58)",
+                      color: "white",
+                    }}
                     onClick={clearCartBtn}
                   >
                     Clear Cart
@@ -138,7 +141,7 @@ const Cart = () => {
               ""
             )}
 
-            <div className="flex flex-column justify-center mt-3 items-center">
+            <div className="flex flex-col justify-center mt-3 items-center">
               <div>
                 <div>
                   {getItemOccurSt
@@ -308,7 +311,7 @@ const Cart = () => {
         ) : (
           //If Cart is empty
           <div
-            className="flex flex-column justify-center items-center"
+            className="flex flex-col justify-center items-center"
             style={{ height: "34rem" }}
           >
             <img
@@ -317,7 +320,9 @@ const Cart = () => {
               alt="EmptyCart"
             />
             <h3 className="font-bold">Your cart is empty</h3>
-            <h5 className="text-center">You can go to home page to view more resturants</h5>
+            <h5 className="text-center">
+              You can go to home page to view more resturants
+            </h5>
             <button
               className=" mt-3 m-1 p-2 bg-orange-500 text-white font-bold"
               onClick={GetHomePage}

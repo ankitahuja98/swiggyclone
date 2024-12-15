@@ -7,7 +7,6 @@ import {
   ItemOccurStore,
 } from "../utils/cartSlice";
 
-
 const Temp = () => {
   let ValIndex;
   const dispatch = useDispatch();
@@ -16,7 +15,6 @@ const Temp = () => {
     return store.cart.items;
   });
   const getItems = Items;
-  // console.log("getItems", getItems);
 
   const ItemOccurSt = useSelector((store) => {
     return store.cart.ItemOccurStore;
@@ -85,14 +83,7 @@ const Temp = () => {
     }
   });
 
-  // console.log("ItemOccurArr", ItemOccurArr);
-  // console.log("FinalItemOccurArr", FinalItemOccurArr);
-  // console.log("getItemOccurSt", getItemOccurSt);
-
-  //Items Occurenec End
-
   useEffect(() => {
-    
     dispatch(clearItemOccurArr());
 
     ItemOccurArr.forEach((val) => {

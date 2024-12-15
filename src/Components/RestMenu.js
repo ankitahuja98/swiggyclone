@@ -13,7 +13,6 @@ import ToggleButton from "../utils/ToggleButton";
 import BestsellerBtn from "../utils/BestsellerBtn";
 import Width from "../utils/Width";
 
-
 const RestaurantMenu = () => {
   const width = Width();
   const [MenuData, SetMenuData] = useState([]);
@@ -48,7 +47,8 @@ const RestaurantMenu = () => {
 
   const fetchRestMenuApi = async () => {
     const response = await fetch(
-      `https://swiggyserver-990t.onrender.com/api/menu?lat=28.6389315&lng=77.08668109999999&restaurantId=${resid}`
+      // `https://swiggyserver-1.onrender.com/api/menu?lat=28.6389315&lng=77.08668109999999&restaurantId=${resid}`;
+      `https://swiggyserver.netlify.app/.netlify/functions/api/api/menu?lat=28.6389315&lng=77.08668109999999&restaurantId=${resid}`
     );
 
     const data = await response.json();
@@ -106,7 +106,6 @@ const RestaurantMenu = () => {
   const HandleChange = (e) => {
     SetSearchItemInp(e.target.value);
   };
-
 
   return (
     <>

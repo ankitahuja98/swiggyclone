@@ -5,6 +5,7 @@
   cursor: pointer;
   border-radius: 20px;
   font-weight: 700;
+  font-display: swap;
 }
 
 @media (max-width: 640px) {

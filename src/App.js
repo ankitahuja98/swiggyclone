@@ -2,10 +2,7 @@ import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-import Error from "./Components/Error";
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense } from "react";
 import Restaurants from "./Components/Restaurants";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
@@ -15,9 +12,13 @@ import OrderPlace from "./Components/OrderPlace";
 import Temp from "./Components/Temp";
 import useOnlineStatus from "../src/utils/useOnlineStatus";
 import OfflinePage from "./utils/OfflinePage";
-import Search from "./Components/Search";
-import Location from "./Components/Location";
+import PageNotFOund404 from "./utils/PageNotFOund404";
+import Contact from "./Components/Contact";
+const About = lazy(() => import("./Components/About"));
 const Cart = lazy(() => import("./Components/Cart"));
+const Search = lazy(() => import("./Components/Search"));
+const Location = lazy(() => import("./Components/Location"));
+
 const RestaurantMenu = lazy(() => import("./Components/RestMenu"));
 
 function App() {
@@ -31,13 +32,38 @@ function App() {
         <>
           <Temp />
           <Routes>
-            <Route exact='true' path="/" element={<Restaurants/>} />
-            <Route exact='true' path="/about" element={<About />} />
-            <Route exact='true' path="/contact" element={<Contact />} />
-            <Route exact='true' path="/orderplaced" element={<OrderPlace />} />
-            <Route exact='true' path="/search" element={<Search />} />
-            <Route exact='true' path="/location" element={<Location />} />
-            <Route exact='true' 
+            <Route exact="true" path="/" element={<Restaurants />} />
+            <Route exact="true" path="/orderplaced" element={<OrderPlace />} />
+            <Route
+              exact="true"
+              path="/about"
+              element={
+                <Suspense>
+                  <About />
+                </Suspense>
+              }
+            />
+            <Route exact="true" path="/contact" element={<Contact />} />
+            <Route
+              exact="true"
+              path="/search"
+              element={
+                <Suspense>
+                  <Search />
+                </Suspense>
+              }
+            />
+            <Route
+              exact="true"
+              path="/location"
+              element={
+                <Suspense>
+                  <Location />
+                </Suspense>
+              }
+            />
+            <Route
+              exact="true"
               path="/restaurantMenu/:resid"
               element={
                 <Suspense>
@@ -45,7 +71,8 @@ function App() {
                 </Suspense>
               }
             />
-            <Route exact='true' 
+            <Route
+              exact="true"
               path="/cart"
               element={
                 <Suspense>
@@ -53,7 +80,7 @@ function App() {
                 </Suspense>
               }
             />
-            <Route path="*" element={<Error />} />
+            <Route path="*" element={<PageNotFOund404 />} />
           </Routes>
           {MaybeCartBarShowns && <CartBar />}
         </>

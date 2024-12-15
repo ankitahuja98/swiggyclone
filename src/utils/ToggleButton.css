@@ -57,6 +57,7 @@ input:checked + .slider:before {
 
 .fontt {
   font-family: "Noto Serif", serif;
+  font-display: swap;
 }
 
 @media (max-width: 640px) {

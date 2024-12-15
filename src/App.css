@@ -39,15 +39,17 @@
 }
 
 .imageSeprationColor {
-  background: linear-gradient(180deg,
-      rgba(244, 244, 245, 0) 0%,
-      rgba(0, 0, 0, 0.4766281512605042) 19%,
-      rgba(0, 0, 0, 0.6278886554621849) 31%,
-      rgba(0, 0, 0, 0.6755077030812324) 42%,
-      rgba(0, 0, 0, 0.7343312324929971) 55%,
-      rgba(0, 0, 0, 0.7763480392156863) 69%,
-      rgba(0, 0, 0, 0.8491771708683473) 85%,
-      rgba(0, 0, 0, 0.8995973389355743) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(244, 244, 245, 0) 0%,
+    rgba(0, 0, 0, 0.4766281512605042) 19%,
+    rgba(0, 0, 0, 0.6278886554621849) 31%,
+    rgba(0, 0, 0, 0.6755077030812324) 42%,
+    rgba(0, 0, 0, 0.7343312324929971) 55%,
+    rgba(0, 0, 0, 0.7763480392156863) 69%,
+    rgba(0, 0, 0, 0.8491771708683473) 85%,
+    rgba(0, 0, 0, 0.8995973389355743) 100%
+  );
   height: 2.5rem;
   z-index: 1;
 }
@@ -55,7 +57,9 @@
 .row {
   justify-content: start;
 }
-
+.restCard {
+  justify-content: space-between !important;
+}
 .restRating {
   display: flex !important;
   justify-content: center !important;
@@ -91,6 +95,7 @@
   justify-content: space-between;
   margin-bottom: 0rem;
   padding-top: 0.7rem;
+  padding-bottom: 0.3rem;
 }
 
 .ItemDetails {
@@ -167,10 +172,12 @@
   justify-content: center;
   align-content: center;
   border-radius: 30px;
-  background: linear-gradient(360deg,
-      hsla(240, 13%, 90%, 1) 0%,
-      hsla(240, 20%, 94%, 1) 36%,
-      hsla(240, 14%, 99%, 1) 100%);
+  background: linear-gradient(
+    360deg,
+    hsla(240, 13%, 90%, 1) 0%,
+    hsla(240, 20%, 94%, 1) 36%,
+    hsla(240, 14%, 99%, 1) 100%
+  );
 }
 
 .restMenudetailsDiv {
@@ -178,8 +185,6 @@
   margin-bottom: 1rem;
   background-color: white;
 }
-
-
 
 .Header,
 .Body,
@@ -262,31 +267,26 @@
   background-size: 1200px 100%;
 }
 
-
-@media (max-width:450px) {
-
+@media (max-width: 450px) {
   .NoBtn,
   .StartAFresh {
     font-size: 0.7rem;
   }
 }
 
-@media (max-width:350px) {
-
+@media (max-width: 350px) {
   .NoBtn,
   .StartAFresh {
     padding: 0.3rem;
   }
 }
 
-@media (max-width:325px) {
-
+@media (max-width: 325px) {
   .NoBtn,
   .StartAFresh {
     font-size: 0.6rem;
   }
 }
-
 
 @keyframes shimmer {
   0% {
@@ -308,20 +308,20 @@
   margin: 0px 20px 0px 0px;
 }
 
-@media(max-width:640px) {
+@media (max-width: 640px) {
   .SearchItemInp {
     margin: 0px 0px 10px 0px;
     width: 100%;
   }
 }
 
-@media(max-width:400px) {
+@media (max-width: 400px) {
   .RestMenuBox {
     display: block;
   }
 }
 
-@media(max-width:335px) {
+@media (max-width: 335px) {
   .RestInfoName {
     font-size: 1.3rem !important;
   }

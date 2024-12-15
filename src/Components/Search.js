@@ -39,14 +39,15 @@ const Search = () => {
 
   useEffect(() => {
     fetchResturantsApi();
-  }, [getLat,getLong]);
+  }, [getLat, getLong]);
 
   const fetchResturantsApi = async () => {
     // console.log("getLat",getLat)
     // console.log("getLong",getLong)
 
     const response = await fetch(
-      `https://swiggyserver-990t.onrender.com/api/restaurants?lat=${getLat}&lng=${getLong}&page_type=DESKTOP_WEB_LISTING`
+      // `https://swiggyserver-1.onrender.com/api/restaurants?lat=${getLat}&lng=${getLong}&page_type=DESKTOP_WEB_LISTING`
+      `https://swiggyserver.netlify.app/.netlify/functions/api/api/restaurants?lat=${getLat}&lng=${getLong}&page_type=DESKTOP_WEB_LISTING`
     );
 
     const fetch_data = await response.json();
@@ -118,7 +119,7 @@ const Search = () => {
     <>
       <div className="NavbarSeprationcolor" style={{ height: "2rem" }}></div>
 
-      <div className="SeaarchPageDiv container flex flex-column justify-center items-center">
+      <div className="SeaarchPageDiv container flex flex-col justify-center items-center">
         <div className="w-11/12 md:w-10/12 lg:w-10/12 xl:w-9/12 flex border-2 px-4 mb-5 rounded-lg">
           <input
             className="filterInput"

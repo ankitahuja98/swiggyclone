@@ -1,7 +1,6 @@
 import React from "react";
 import { Rest_img_url } from "../utils/constant";
 
-
 const RestCard = (props) => {
   const { Api_data } = props;
 
@@ -31,9 +30,7 @@ const RestCard = (props) => {
         />
       </div>
       {}
-      <div className="imageSeprationColor relative bottom-10 rounded-b-2xl">
-        {" "}
-      </div>
+      <div className="imageSeprationColor relative bottom-10 rounded-b-2xl"></div>
 
       <div
         className={` card_detail flex flex-col justify-start pl-1.5 relative ${
@@ -42,7 +39,7 @@ const RestCard = (props) => {
       >
         <p
           className="mb-1 font-black flex justify-start z-10"
-          style={{ color: "white", fontSize:"1.18rem" }}
+          style={{ color: "white", fontSize: "1.05rem" }}
         >
           {aggregatedDiscountInfoV3 ? aggregatedDiscountInfoV3.header : null}{" "}
           {aggregatedDiscountInfoV3 ? aggregatedDiscountInfoV3.subHeader : null}
@@ -59,8 +56,9 @@ const RestCard = (props) => {
               style={{ color: "#0a9400" }}
             ></i>
             <span className="pl-1 font-semibold text-base">{avgRating}</span>
-            <span className="pl-1 font-semibold text-base">({totalRatingsString})</span>
-
+            <span className="pl-1 font-semibold text-base">
+              ({totalRatingsString})
+            </span>
           </div>
 
           {veg ? (
@@ -80,7 +78,7 @@ const RestCard = (props) => {
           {cuisines.join(", ")}
         </p>
 
-        <p className="mb-0 d-flex" style={{ color: color.secondary }}>
+        <p className="mb-0 flex" style={{ color: color.secondary }}>
           {areaName}
         </p>
       </div>

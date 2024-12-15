@@ -18,7 +18,10 @@ const About = () => {
         </div>
 
         <div className="FirstSecAbout flex flex-col justify-between items-center ">
-          <p className="font-bold text-2xl lg:text-3xl xl:text-4xl" style={{ color: "white" }}>
+          <p
+            className="font-bold text-2xl lg:text-3xl xl:text-4xl"
+            style={{ color: "white" }}
+          >
             About Swiggy
           </p>
           <p className="text-center" style={{ color: "white" }}>
@@ -78,35 +81,51 @@ const About = () => {
       {/* Third Section Start */}
       <div className="ThirdSection flex justify-center items-center my-5">
         <div className="ThirdSectionDiv flex justify-center items-center w-11/12  row py-3">
-
           <div className="ThSecCont text-center border-r-2  border-gray-300 flex flex-col justify-center items-center h-24 ">
-            <p className="font-bold text-2xl lg:text-3xl xl:text-3xl" style={{ color: "#1ba672" }}>
+            <p
+              className="font-bold text-2xl lg:text-3xl xl:text-3xl"
+              style={{ color: "#1ba672" }}
+            >
               3bn+
             </p>
             <p className="text-base md:text-lg lg:text-xl xl:text-xl">orders</p>
           </div>
 
           <div className="ThSecCont ThSecCont3 text-center border-r-2  border-gray-300 flex flex-col justify-center items-center h-24">
-            <p className="font-bold text-2xl lg:text-3xl xl:text-3xl" style={{ color: "#1ba672" }}>
+            <p
+              className="font-bold text-2xl lg:text-3xl xl:text-3xl"
+              style={{ color: "#1ba672" }}
+            >
               ~200k+
             </p>
-            <p lassName=" text-base md:text-lg lg:text-xl xl:text-xl">restaurant partners</p>
+            <p lassName=" text-base md:text-lg lg:text-xl xl:text-xl">
+              restaurant partners
+            </p>
           </div>
 
           <div className="ThSecCont2 text-center border-r-2  border-gray-300 flex flex-col justify-center items-center h-24">
-            <p className="font-bold text-2xl lg:text-3xl xl:text-3xl" style={{ color: "#1ba672" }}>
+            <p
+              className="font-bold text-2xl lg:text-3xl xl:text-3xl"
+              style={{ color: "#1ba672" }}
+            >
               380k+
             </p>
-            <p lassName="text-base md:text-lg lg:text-xl xl:text-xl">delivery partners</p>
+            <p lassName="text-base md:text-lg lg:text-xl xl:text-xl">
+              delivery partners
+            </p>
           </div>
 
           <div className="ThSecCont2 text-center flex flex-col justify-center items-center h-24">
-            <p className="font-bold text-2xl lg:text-3xl xl:text-3xl" style={{ color: "#1ba672" }}>
+            <p
+              className="font-bold text-2xl lg:text-3xl xl:text-3xl"
+              style={{ color: "#1ba672" }}
+            >
               650+
             </p>
-            <p lassName="text-base md:text-lg lg:text-xl xl:text-xl">cities in India</p>
+            <p lassName="text-base md:text-lg lg:text-xl xl:text-xl">
+              cities in India
+            </p>
           </div>
-
         </div>
       </div>
       {/* Third Section End */}

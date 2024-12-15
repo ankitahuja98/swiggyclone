@@ -2,7 +2,7 @@ import Logo_url from "../Images/swiggylogo.svg";
 import { Link, useNavigate } from "react-router-dom";
 import "../App.css";
 import "./CSS/Navbar.css";
-import Tooltip from '@mui/material/Tooltip';
+import Tooltip from "@mui/material/Tooltip";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
@@ -24,11 +24,9 @@ const Navbar = () => {
     navigate("/");
   };
 
-
-
   return (
     <div className="flex justify-center NavbarDiv sticky top-0">
-      <div className="navbar flex justify-center items-center w-11/12 md:w-11/12 lg:w-10/12 xl:w-10/12">
+      <div className="navbar flex justify-center items-center w-11/12 md:w-11/12 lg:w-10/12">
         <div className="flex justify-center ">
           <div className="main_logo hidden sm:flex items-center justify-center ">
             <img

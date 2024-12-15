@@ -9,6 +9,8 @@ import { addRestName } from "../utils/cartSlice";
 import Width from "../utils/Width";
 import CounterVal from "../utils/CounterVal";
 import LocationUnserviceable from "../utils/LocationUnserviceable";
+import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 
 const Restaurants = () => {
   const dispatch = useDispatch();
@@ -95,13 +97,12 @@ const Restaurants = () => {
 
   const abc = getLatLongDisplayName.split(",");
   const char1 = abc[0];
-  // const char2 = abc.slice(1).join();
 
   const fetchResturantsApi = async () => {
-    // console.log("getLat", getLat);
-    // console.log("getLong", getLong);
+    // console.log(getLat, getLong);
     const response = await fetch(
-      `https://swiggyserver-990t.onrender.com/api/restaurants?lat=${getLat}&lng=${getLong}&page_type=DESKTOP_WEB_LISTING`
+      // `https://swiggyserver-1.onrender.com/api/restaurants?lat=${getLat}&lng=${getLong}&page_type=DESKTOP_WEB_LISTING`
+      `https://swiggyserver.netlify.app/.netlify/functions/api/api/restaurants?lat=${getLat}&lng=${getLong}&page_type=DESKTOP_WEB_LISTING`
     );
 
     const fetch_data = await response.json();
@@ -364,15 +365,17 @@ const Restaurants = () => {
 
                   <div className="TopRestArrowDiv">
                     <i
-                      className="TopRestLeftArrow fa-sharp fa-solid fa-circle-left text-lg md:text-xl lg:text-2xl xl:text-2xl"
                       style={{ color: imageSlideBtn.leftBtn }}
                       onClick={PrevBtn}
-                    ></i>
+                    >
+                      <ArrowCircleLeftIcon style={{ fontSize: "2rem" }} />
+                    </i>
                     <i
-                      className="TopRestRightArrow fa-sharp fa-solid fa-circle-left fa-flip-horizontal text-lg md:text-xl lg:text-2xl xl:text-2xl"
                       style={{ color: imageSlideBtn.rightBtn }}
                       onClick={NextBtn}
-                    ></i>
+                    >
+                      <ArrowCircleRightIcon style={{ fontSize: "2rem" }} />
+                    </i>
                   </div>
                 </div>
 
@@ -524,7 +527,7 @@ const Restaurants = () => {
                   )}
                 </>
               ) : (
-                <div className="restCard flex justify-center md:justify-between lg:justify-between row">
+                <div className="row restCard flex justify-center md:justify-between lg:justify-between ">
                   {ShowRestaurants?.map((value) => {
                     return (
                       <div

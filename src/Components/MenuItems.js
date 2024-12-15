@@ -16,8 +16,7 @@ import {
 } from "../utils/cartSlice";
 
 const MenuItems = (props) => {
-  const { model, setModel, MenuData, getdata, value, modelValue } =
-    props;
+  const { model, setModel, MenuData, getdata, value, modelValue } = props;
 
   const [quantity, setQuantity] = useState(0);
 
@@ -136,7 +135,7 @@ const MenuItems = (props) => {
   };
 
   return (
-    <div className="MenuItem d-flex" key={id}>
+    <div className="MenuItem flex" key={id}>
       <div className="ItemDetails w-10/12">
         <div className="flex items-center">
           <p className="m-0">
@@ -181,7 +180,7 @@ const MenuItems = (props) => {
         </p>
       </div>
 
-      <div className="d-flex flex-column justify-content-center align-items-center img_">
+      <div className="flex flex-col justify-content-center align-items-center img_">
         <img src={Rest_Menu_img + imageId} alt="err" />
         {quantity === 0 ? (
           <button

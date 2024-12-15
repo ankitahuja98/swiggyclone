@@ -69,8 +69,8 @@ const Location = () => {
         className="NavbarSeprationcolor sticky top-16 "
         style={{ height: "2rem" }}
       ></div>
-      <div className="LatLong mx-3 flex flex-column justify-center items-center mt-4">
-        <div className="w-11/12 lg:w-8/12 flex flex-column">
+      <div className="LatLong mx-3 flex flex-col justify-center items-center mt-4">
+        <div className="w-11/12 lg:w-8/12 flex flex-col">
           <label className="font-bold text-lg lg:text-xl mb-2 pl-">
             Enter your city or area name
           </label>
@@ -91,7 +91,7 @@ const Location = () => {
               onChange={(e) => setlatlongInput(e.target.value)}
               onClick={() => setdisplaylatlong("block")}
               placeholder="Try Delhi, Mumbai etc."
-            //   style={{ width: "93%" }}
+              //   style={{ width: "93%" }}
             />
 
             <span className="mr-3 flex items-center justify-center">
