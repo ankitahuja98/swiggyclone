@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/638.4c6f9dd5.chunk.css","mappings":"AACA,mBAEI,eAAgB,CADhB,qBAEF","sources":["Components/CSS/Location.css"],"sourcesContent":["\r\n.latlonglist:hover {\r\n    transform: scale(1.01);\r\n    font-weight: 700;\r\n  }"],"names":[],"sourceRoot":""}
